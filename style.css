@@ -76,7 +76,7 @@
 /* ---------------------------body content------------------------- */
 
       .body-content{
-        background-image: url(./bg.png);
+        background-image: url(./bg1.png);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -472,13 +472,7 @@ label[for = "taskName"]{
     left: 24rem; /* Adjust date input position */
   }
 }
-@media only screen and (min-width: 350px) and (max-width: 400px){
-  .task-description {
-    margin-top: 1rem;
-    margin-left: 1rem;
-    width: 267px;
-}
-}
+ 
 
 /* Media Query for screens up to 768px */
 @media only screen and(max-width: 768px) {
@@ -607,7 +601,7 @@ label[for = "filter"] {
 .task-description {
   margin-top: 1rem;
   margin-left: 1rem;
-  width: 289px;
+  width: 263px;
 }
 
 .task-description p{
@@ -628,7 +622,11 @@ label[for = "filter"] {
   font-size: 2rem;
   border: none;
 }
-
+.button-div{
+  margin-top: 0.7rem;
+    /* margin-bottom: 0rem; */
+    margin-left: -1.5rem;
+}
 .button-div #editBtn {
   padding: 7px;
   width: 60px;
@@ -644,7 +642,7 @@ label[for = "filter"] {
 }
 .task-detail {
   display: flex;
-  margin-left: 1rem;
+  margin-left: .6rem;
   width: 73%;
   justify-content: space-evenly;
   margin-top: 12px;
