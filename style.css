@@ -384,7 +384,7 @@ label[for = "filter"]{
 }
 
 label[for = "taskName"]{
-  color: #212529;
+  color: cornflowerblue ;
 }
 
 .task-detail{
@@ -394,7 +394,9 @@ label[for = "taskName"]{
   justify-content: space-evenly;
   margin-top: 12px;
 }
-
+label[for = "description"]{
+  color: cornflowerblue;;
+}
 .task-detail #para1{ 
   background-color: #273469;
   color: white;
