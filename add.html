@@ -1,15 +1,13 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Task Manager</title>
+    <title>Add Task</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/30bd86ec73.js" crossorigin="anonymous"></script>
-
 </head>
 <body>
-    <!-- -----------------nav section ---------------------->
     <nav>
         <ul class="large-menu">
             <img src="./logo.png" alt="">
@@ -25,54 +23,53 @@
             <li><a href="add.html">Add Tasks</a></li>
         </ul>
     </nav>
-<!-- ---------------------------------body section--------------------- -->
-   <div class="addTask-body">
-     <div class="addtask-text">
-        <p>Add Your Tasks</p>
-     </div>
-      <div class="newtask-container"> 
-     <div class="input-div">
-        <label for="Name">Task Name:</label>
-        <input type="text" placeholder="enter your task name">
-        <label for="Name">Description:</label>
-        <textarea name="description" placeholder= "Add task description" rows="6" cols="40"></textarea>
-     </div>
-     <div class="othercontent">
-        <label for="priority">Priority:</label>
-        <select>
-            <option>High</option>
-            <option>Medium</option>
-            <option>Low</option>
-        </select>
-        <label for="dueDate">Due Date:</label>
-        <input type="date">
-     </div>
-     <div class="status">
-        <label for="status">Status:</label>
-        <P>Completed</P><input type="checkbox">
-        <p>Pending</p><input type="checkbox">
-     </div>
-     <div class="buttons">
-        <button class="savebtn">Save</button>
-        <button class="cancelbtn">Cancel</button>
-     </div>
-      </div>
-   </div>
-
-   <!-- ------------------------------footer section-------------------- -->
-   <footer>
-    <div class="footer">
-        <div class="footer-text">
-            <ul>
-                <li><a href="#">Terms & Conditions</a></li>
-                <li><a href="#">123email@gmai.com</a></li>
-                <li><a href="#">1234567890</a></li>
-                <li><a href="#">facebook Account</a></li>
-            </ul>
-            <p>Copywrite @ 2024 - by Task Manager</p>
+    <div class="addTask-body">
+        <div class="addtask-text">
+            <p>Add Your Tasks</p>
+        </div>
+        <div class="newtask-container"> 
+            <form onsubmit="return tasksubmit(event)">
+                <div class="input-div">
+                    <label for="taskName">Task Name:</label>
+                    <input type="text" placeholder="Enter your task name" id="taskName">
+                    <label for="description">Description:</label>
+                    <textarea name="description" placeholder="Add task description" rows="6" cols="40" id="description"></textarea>
+                </div>
+                <div class="othercontent">
+                    <label for="priority">Priority:</label>
+                    <select id="priority">
+                        <option>High</option>
+                        <option>Medium</option>
+                        <option>Low</option>
+                    </select>
+                    <label for="dueDate">Due Date:</label>
+                    <input type="date" id="dueDate">
+                </div>
+                <div class="status">
+                    <label for="status">Status:</label>
+                    <label>Completed</label><input type="radio" name="status" value="Completed">
+                    <label>Pending</label><input type="radio" name="status" value="Pending">
+                </div>
+                <div class="buttons">
+                    <button class="savebtn" type="submit">Save</button>
+                    <button class="cancelbtn" type="button" onclick="location.href='tasks.html'">Cancel</button>
+                </div>
+            </form>
         </div>
     </div>
-</footer>
+    <footer>
+        <div class="footer">
+            <div class="footer-text">
+                <ul>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">123email@gmail.com</a></li>
+                    <li><a href="#">1234567890</a></li>
+                    <li><a href="#">Facebook Account</a></li>
+                </ul>
+                <p>Copyright @ 2024 - by Task Manager</p>
+            </div>
+        </div>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
