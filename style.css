@@ -435,12 +435,12 @@ label[for = "description"]{
     margin-top: 0;
 }
 
-.button-div #delBtn{
+#delBtn{
   padding: 10px;
   width: 80px;
   background-color: #ff004f;
   border-radius: 10px;
-  margin-left: 1rem;
+  margin-left: 3rem;
   margin-top: 0;
 }
 
